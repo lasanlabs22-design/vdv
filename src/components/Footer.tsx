@@ -35,7 +35,11 @@ export default function Footer() {
       </div>
       <div className="footer-base">
         <p lang="te" className="footer-mantra">ఓం నమో వేంకటేశాయ</p>
-        <p>© {new Date().getFullYear()} {site.name}. DV means Divine Vision.</p>
+        <p className="powered-by">
+          <span>Powered by</span>
+          <span className="lasan-signature">Lasan Labs</span>
+        </p>
+        <p className="footer-copy">© {new Date().getFullYear()} {site.name}.</p>
       </div>
     </footer>
   );
