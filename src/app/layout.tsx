@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, Noto_Serif_Telugu, Playfair_Display } from "next/font/google";
+import { Montserrat, Noto_Serif_Telugu, Playfair_Display, Space_Grotesk } from "next/font/google";
 import "lenis/dist/lenis.css";
 import "./globals.css";
 import { site } from "@/lib/site";
@@ -11,6 +11,8 @@ import Motion from "@/components/Motion";
 const playfair = Playfair_Display({ variable: "--font-playfair", subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], style: ["normal", "italic"] });
 const montserrat = Montserrat({ variable: "--font-montserrat", subsets: ["latin"], weight: ["300", "400", "500", "600"] });
 const telugu = Noto_Serif_Telugu({ variable: "--font-telugu", subsets: ["telugu"], weight: ["500", "700"] });
+// Only for the "Powered by Lasan Labs" signature in the footer.
+const grotesk = Space_Grotesk({ variable: "--font-space-grotesk", weight: "600", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: { default: `${site.name} | Architecture, Interiors & Turnkey Projects`, template: `%s | ${site.name}` },
@@ -26,7 +28,7 @@ const bootScript = `(function(){var d=document.documentElement;d.classList.add('
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${playfair.variable} ${montserrat.variable} ${telugu.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${playfair.variable} ${montserrat.variable} ${telugu.variable} ${grotesk.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: bootScript }} />
       </head>

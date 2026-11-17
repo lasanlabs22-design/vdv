@@ -2731,13 +2731,17 @@ figure {
   max-width: 1240px;
   margin: 0 auto;
   padding: 20px var(--gutter) 28px;
-  display: flex;
-  justify-content: space-between;
+  /* Mantra left, Lasan Labs credit centred, copyright right. */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  flex-wrap: wrap;
   gap: 10px;
   font-size: 12px;
   color: var(--muted);
+}
+.footer-copy {
+  justify-self: end;
+  text-align: right;
 }
 
 .footer-mantra {
@@ -2746,12 +2750,39 @@ figure {
   color: var(--gold-hi);
 }
 
+/* Lasan Labs footprint, styled as across Lasan projects: baseline-aligned (the two words use
+   different fonts), with the signature in Space Grotesk and Lasan's gradient for dark grounds. */
+.powered-by {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.lasan-signature {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  background: linear-gradient(100deg, #fff 10%, #b3a1ff 55%, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 @media (max-width: 800px) {
   .footer-inner {
     grid-template-columns: 1fr 1fr;
   }
   .footer-brand {
     grid-column: span 2;
+  }
+  .footer-base {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .footer-copy {
+    justify-self: center;
+    text-align: center;
   }
 }
 
