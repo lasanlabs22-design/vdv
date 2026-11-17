@@ -148,7 +148,7 @@ figure {
   display: inline-flex;
   align-items: center;
   gap: 14px;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -208,7 +208,7 @@ figure {
   justify-content: center;
   padding: 15px 28px;
   border-radius: 2px;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -259,7 +259,7 @@ figure {
 .framed figcaption {
   margin-top: 12px;
   text-align: center;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.26em;
   text-transform: uppercase;
   color: var(--muted);
@@ -457,7 +457,7 @@ figure {
 }
 
 .intro-latin {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: var(--muted);
@@ -598,7 +598,7 @@ figure {
 
 .nav-links a {
   position: relative;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -793,7 +793,7 @@ figure {
   left: var(--gutter);
   bottom: 18px;
   z-index: 1;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--gold-hi);
@@ -831,7 +831,7 @@ figure {
 
 .creds dd {
   margin: 6px 0 0;
-  font-size: 10.5px;
+  font-size: 12.5px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
@@ -880,7 +880,7 @@ figure {
   display: block;
   font-family: var(--sans);
   font-style: normal;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--muted);
@@ -1007,7 +1007,7 @@ figure {
 }
 
 .space-group {
-  font-size: 10px;
+  font-size: 12.5px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--gold);
@@ -1045,7 +1045,7 @@ figure {
   gap: 4px 10px;
   padding-top: 14px;
   border-top: 1px solid var(--line);
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--muted);
 }
 
@@ -1060,7 +1060,7 @@ figure {
 
 .space-go {
   margin-top: 12px;
-  font-size: 10.5px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1151,7 +1151,7 @@ figure {
 }
 
 .mood-tiers span:last-child {
-  font-size: 12.5px;
+  font-size: 14px;
   color: var(--muted);
   line-height: 1.4;
 }
@@ -1198,7 +1198,7 @@ figure {
 
 .mood-groups button small {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--gold);
 }
@@ -1222,7 +1222,7 @@ figure {
   flex: none;
   padding: 8px 13px;
   border: 1px solid var(--line);
-  font-size: 10.5px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1251,7 +1251,7 @@ figure {
 .mood-tag small {
   display: block;
   margin-top: 3px;
-  font-size: 12px;
+  font-size: 13.5px;
   letter-spacing: 0.02em;
   text-transform: none;
   color: var(--ivory);
@@ -1270,7 +1270,7 @@ figure {
   max-width: 44%;
   padding: 8px 12px;
   background: rgba(0, 0, 0, 0.72);
-  font-size: 10.5px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1432,7 +1432,7 @@ figure {
 
 .wk-cats small {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--gold);
 }
@@ -1494,7 +1494,7 @@ figure {
 
 .wk-cap small {
   font-family: var(--sans);
-  font-size: 10.5px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1612,7 +1612,7 @@ figure {
     padding: 8px 13px;
     border: 1px solid var(--line);
     font-family: var(--sans);
-    font-size: 10.5px;
+    font-size: 12.5px;
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -1677,14 +1677,14 @@ figure {
 
 .lightbox figcaption small {
   font-family: var(--sans);
-  font-size: 10px;
+  font-size: 12.5px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--gold-hi);
 }
 
 .lightbox figcaption span {
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--muted);
 }
 
@@ -1734,7 +1734,7 @@ figure {
 .pstudio-pick small {
   display: block;
   font-family: var(--sans);
-  font-size: 9.5px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1895,7 +1895,7 @@ figure {
   flex: none;
   padding: 8px 14px;
   border: 1px solid var(--line);
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--text);
@@ -1923,7 +1923,7 @@ figure {
 }
 
 .pstudio-info small {
-  font-size: 10px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -2063,7 +2063,7 @@ figure {
 }
 
 .groom-caption small {
-  font-size: 10px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -2094,7 +2094,7 @@ figure {
   right: 0;
   bottom: 14px;
   text-align: center;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.12em;
   color: var(--muted);
   pointer-events: none;
@@ -2546,7 +2546,7 @@ figure {
   font-family: var(--sans);
   font-style: normal;
   font-weight: 600;
-  font-size: 10.5px;
+  font-size: 12.5px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--muted);
@@ -2597,7 +2597,7 @@ figure {
 .contact-services li {
   padding: 7px 13px;
   border: 1px solid var(--line);
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--muted);
 }
 
@@ -2618,7 +2618,7 @@ figure {
 }
 
 .contact-form label span {
-  font-size: 10.5px;
+  font-size: 12.5px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -2705,7 +2705,7 @@ figure {
 }
 
 .footer-col h3 {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--gold);
@@ -2736,7 +2736,7 @@ figure {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 10px;
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--muted);
 }
 .footer-copy {
@@ -2858,37 +2858,37 @@ html.darshan-active, .darshan-active body { overflow: hidden; }
 .temple-experience--opening .temple-leaf--right, .temple-experience--darshan .temple-leaf--right { transform: rotateY(105deg); filter: brightness(.35); }
 .temple-heading { position: absolute; top: 30px; left: 40px; display: grid; text-shadow: 0 2px 15px #000; }
 .temple-heading > span { font: 22px var(--serif); }
-.temple-heading small { font-size: 9px; margin-top: 7px; letter-spacing: .2em; }
-.temple-skip { position: absolute; top: 30px; right: 40px; padding: 8px 16px; border: 1px solid #b18d5766; background: #090806a6; font-size: 11px; letter-spacing: .1em; }
+.temple-heading small { font-size: 12px; margin-top: 7px; letter-spacing: .2em; }
+.temple-skip { position: absolute; top: 30px; right: 40px; padding: 8px 16px; border: 1px solid #b18d5766; background: #090806a6; font-size: 13px; letter-spacing: .1em; }
 .temple-skip span { margin-left: 16px; }
 .temple-invitation { position: absolute; bottom: 15%; left: 0; right: 0; text-align: center; transition: opacity .5s; }
 .temple-kicker { display: block; font: italic clamp(23px,3vw,38px) var(--serif); text-shadow: 0 2px 15px #000; margin-bottom: 20px; }
-.temple-invitation button, .darshan-caption button { padding: 14px 25px; border: 1px solid #caa454; background: #110c08cf; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
+.temple-invitation button, .darshan-caption button { padding: 14px 25px; border: 1px solid #caa454; background: #110c08cf; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; }
 .temple-invitation button span { margin-left: 20px; }
 .temple-experience--opening .temple-invitation, .temple-experience--darshan .temple-invitation { opacity: 0; pointer-events: none; }
 .darshan-caption { position: absolute; bottom: 8%; left: 0; right: 0; text-align: center; }
 /* A dark plaque behind the mantra keeps it legible over the garlands and pedestal. */
 .darshan-caption p { display: inline-block; padding: 6px 30px 8px; font: 700 clamp(24px,3.4vw,36px) var(--telugu); color: #ffe7ad; text-shadow: 0 2px 3px #000, 0 0 18px #000; background: linear-gradient(90deg, transparent, #0c0805e6 18%, #0c0805e6 82%, transparent); border-top: 1px solid #c9a24c80; border-bottom: 1px solid #c9a24c80; }
-.darshan-caption > span { display: block; font-size: 11px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: #f0d9a0; text-shadow: 0 1px 3px #000; margin: 12px 0 20px; }
+.darshan-caption > span { display: block; font-size: 13px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: #f0d9a0; text-shadow: 0 1px 3px #000; margin: 12px 0 20px; }
 .darshan-caption button { background: #e1bf78; color: #191109; }
 .darshan-caption button span { margin-left: 20px; }
-.temple-progress { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); display: flex; gap: 22px; align-items: center; white-space: nowrap; font-size: 8px; letter-spacing: .17em; text-transform: uppercase; color: #b0a28c; }
+.temple-progress { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); display: flex; gap: 22px; align-items: center; white-space: nowrap; font-size: 11px; letter-spacing: .17em; text-transform: uppercase; color: #b0a28c; }
 .temple-progress .active { color: #f5d793; }
 .temple-progress i { width: 60px; height: 1px; background: #b0a28c66; }
 .divine-home { background: #100f0b; }
 /* The opening section fills exactly one screen. --chrome is everything around the shrine image (nav, padding, caption), so the image is sized from the height that is left and is never cut off. */
 .divine-hero { --nav: 92px; --chrome: 300px; position: relative; display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; max-width: 1600px; margin: auto; padding: calc(var(--nav) + 20px) 7% 20px; height: 100svh; min-height: 620px; gap: 5%; background: radial-gradient(ellipse at 75% 45%,#43321b40,transparent 50%); }
 .divine-copy { position: relative; z-index: 1; }
-.divine-overline { display: flex; align-items: center; gap: 10px; color: #d0b77e; font-size: 9px; text-transform: uppercase; letter-spacing: .23em; margin-bottom: 30px; }
+.divine-overline { display: flex; align-items: center; gap: 10px; color: #d0b77e; font-size: 12px; text-transform: uppercase; letter-spacing: .23em; margin-bottom: 30px; }
 .divine-overline > span { width: 6px; height: 6px; background: #bc8b40; transform: rotate(45deg); flex-shrink: 0; }
 .divine-copy h1 { font: 400 clamp(38px,min(5.25vw,8.4svh),82px)/1.11 var(--serif); letter-spacing: -.045em; color: #f3ecdf; }
 .divine-copy h1 em { color: #d4b573; font-weight: 400; }
 .divine-description { max-width: 600px; font-size: clamp(13px, 1.05vw, 15.5px); line-height: 1.95; color: #b8ad9b; margin: 27px 0 30px; }
 .divine-actions { display: flex; gap: 27px; align-items: center; flex-wrap: wrap; }
-.divine-actions .btn { gap: 24px; font-size: 10px; padding: 17px 23px; }
-.divine-text-link { display: inline-flex; align-items: center; gap: 23px; font-size: 11px; border-bottom: 1px solid #a98e5960; padding: 10px 0; }
+.divine-actions .btn { gap: 24px; font-size: 12.5px; padding: 17px 23px; }
+.divine-text-link { display: inline-flex; align-items: center; gap: 23px; font-size: 13px; border-bottom: 1px solid #a98e5960; padding: 10px 0; }
 .divine-signature { display: flex; gap: 17px; align-items: center; margin-top: 47px; }
-.divine-signature p { font-size: 10px; color: #8e8677; line-height: 1.8; letter-spacing: .04em; }
+.divine-signature p { font-size: 12.5px; color: #8e8677; line-height: 1.8; letter-spacing: .04em; }
 .divine-signature strong { color: #c1b59d; font-weight: 400; }
 .sacred-mark { position: relative; font: 54px/1 var(--serif); color: #dcc9a4; }
 .sacred-mark i { position: absolute; width: 3px; height: 23px; background: #a13a2e; top: 9px; left: 50%; }
@@ -2899,17 +2899,17 @@ html.darshan-active, .darshan-active body { overflow: hidden; }
 .shrine-orbit::after { content: ''; position: absolute; inset: -12px; border: 1px solid #b18d571c; border-radius: inherit; }
 .divine-shrine figcaption { position: relative; margin-top: 18px; color: #d8be86; }
 .divine-shrine figcaption > span { font: 18px var(--telugu); }
-.divine-shrine figcaption small { display: block; font-size: 8px; text-transform: uppercase; letter-spacing: .25em; margin-top: 9px; color: #a69b87; }
-.darshan-replay { font-size: 9px; color: #ccb17d; border-bottom: 1px solid #ccb17d50; padding: 7px 0; margin-top: 13px; }
+.divine-shrine figcaption small { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .25em; margin-top: 9px; color: #a69b87; }
+.darshan-replay { font-size: 12px; color: #ccb17d; border-bottom: 1px solid #ccb17d50; padding: 7px 0; margin-top: 13px; }
 .darshan-replay span { margin-left: 12px; }
-.divine-side-note { position: absolute; right: 22px; top: 48%; writing-mode: vertical-rl; font-size: 8px; letter-spacing: .3em; color: #a18e6b; }
+.divine-side-note { position: absolute; right: 22px; top: 48%; writing-mode: vertical-rl; font-size: 11px; letter-spacing: .3em; color: #a18e6b; }
 .divine-foundation { border-top: 1px solid #caa45430; border-bottom: 1px solid #caa45430; display: flex; align-items: center; gap: 50px; padding: 30px 7%; background: #181610; }
 .divine-foundation > p { font: 18px/1.5 var(--serif); color: #ddd2bc; }
 .divine-foundation > p em { color: #a68b56; }
 .divine-foundation dl { display: flex; justify-content: space-around; flex: 1; margin: 0; gap: 30px; }
 .divine-foundation dt { font: 36px var(--serif); color: #e3c88e; }
 .divine-foundation dt span { font-size: 22px; }
-.divine-foundation dd { margin: 8px 0 0; font-size: 8px; letter-spacing: .15em; text-transform: uppercase; color: #aea28c; }
+.divine-foundation dd { margin: 8px 0 0; font-size: 11px; letter-spacing: .15em; text-transform: uppercase; color: #aea28c; }
 .divine-foundation > a { display: grid; place-items: center; width: 46px; height: 46px; border: 1px solid #b18d5755; border-radius: 50%; color: #dec791; }
 /* Full-width showcase: the render at its own 16:9 shape, copy laid over a soft dark fade. */
 /* Always the full width; the height follows 16:9 but never runs past the screen. */
@@ -2940,18 +2940,18 @@ html.darshan-active, .darshan-active body { overflow: hidden; }
   .showcase-copy .btn { width: 100%; }
 }
 @media (max-height: 780px) and (min-width: 701px) { .divine-signature { display: none; } .divine-overline { margin-bottom: 20px; } .divine-description { margin: 20px 0 24px; } }
-@media (max-width: 1000px) { .divine-hero { padding-left: 5%; padding-right: 5%; gap: 2%; } .divine-actions { gap: 13px; } .divine-side-note { display: none; } .divine-overline { font-size: 8px; letter-spacing: .13em; } .divine-foundation { gap: 25px; } }
+@media (max-width: 1000px) { .divine-hero { padding-left: 5%; padding-right: 5%; gap: 2%; } .divine-actions { gap: 13px; } .divine-side-note { display: none; } .divine-overline { font-size: 11px; letter-spacing: .13em; } .divine-foundation { gap: 25px; } }
 @media (max-width: 700px) {
-  .temple-heading { top: 22px; left: 20px; } .temple-heading > span { font-size: 18px; } .temple-skip { top: 22px; right: 18px; font-size: 9px; }
-  .temple-leaf { background-size: 200% 100%; } .sanctum { inset: 10% 0 19%; } .darshan-caption { bottom: 9%; } .temple-progress { gap: 12px; font-size: 7px; } .temple-progress i { width: 25px; }
+  .temple-heading { top: 22px; left: 20px; } .temple-heading > span { font-size: 18px; } .temple-skip { top: 22px; right: 18px; font-size: 12px; }
+  .temple-leaf { background-size: 200% 100%; } .sanctum { inset: 10% 0 19%; } .darshan-caption { bottom: 9%; } .temple-progress { gap: 12px; font-size: 11px; } .temple-progress i { width: 25px; }
   .divine-hero { grid-template-columns: 1fr; padding: 92px 7% 12px; gap: 22px; height: auto; min-height: 100svh; }
   .divine-shrine { width: min(100%, calc((100svh - 580px) / 1.4 + 40px)); min-width: 200px; padding-top: 10px; }
   .divine-hero .divine-signature, .divine-shrine figcaption small { display: none; } .divine-shrine figcaption { margin-top: 10px; } .darshan-replay { margin-top: 6px; }
   .divine-copy h1 { font-size: clamp(42px,10.5vw,66px); } .desktop-break { display: none; }
-  .divine-description { font-size: 12px; margin: 22px 0; } .divine-overline { margin-bottom: 23px; font-size: 7px; }
-  .divine-actions { gap: 22px; } .divine-actions .btn { padding: 15px 19px; font-size: 9px; } .divine-text-link { font-size: 10px; gap: 12px; }
+  .divine-description { font-size: 13.5px; margin: 22px 0; } .divine-overline { margin-bottom: 23px; font-size: 11px; }
+  .divine-actions { gap: 22px; } .divine-actions .btn { padding: 15px 19px; font-size: 12px; } .divine-text-link { font-size: 12.5px; gap: 12px; }
   .divine-signature { margin-top: 25px; } .divine-shrine { max-width: 390px; padding-left: 20px; padding-right: 20px; }
-  .divine-foundation { flex-wrap: wrap; padding: 26px 7%; gap: 23px; } .divine-foundation > p { width: 100%; font-size: 19px; } .divine-foundation dl { justify-content: space-between; gap: 12px; } .divine-foundation dt { font-size: 29px; } .divine-foundation dd { font-size: 7px; letter-spacing: .07em; } .divine-foundation > a { display: none; }
+  .divine-foundation { flex-wrap: wrap; padding: 26px 7%; gap: 23px; } .divine-foundation > p { width: 100%; font-size: 19px; } .divine-foundation dl { justify-content: space-between; gap: 12px; } .divine-foundation dt { font-size: 29px; } .divine-foundation dd { font-size: 11px; letter-spacing: .07em; } .divine-foundation > a { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .temple-leaf, .sanctum { transition: none; } }
 
@@ -2984,18 +2984,18 @@ html.darshan-active, .darshan-active body { overflow: hidden; }
 .devotional-wing--right .deepam-light { animation-delay: -2s; }
 .temple-motes { position: absolute; inset: 0; }
 .temple-motes i { position: absolute; left: var(--x); bottom: -10%; width: 2px; height: 2px; background: #e0b75b; border-radius: 50%; box-shadow: 0 0 8px 2px #d7a34c55; opacity: 0; animation: sacred-mote var(--duration) var(--delay) linear infinite; }
-.atmosphere-toggle { position: absolute; left: 40px; bottom: 23px; font-size: 8px; letter-spacing: .08em; color: #aa9876; padding: 4px 0; border-bottom: 1px solid #aa987640; }
+.atmosphere-toggle { position: absolute; left: 40px; bottom: 23px; font-size: 11px; letter-spacing: .08em; color: #aa9876; padding: 4px 0; border-bottom: 1px solid #aa987640; }
 .atmosphere-paused .temple-atmosphere * { animation-play-state: paused !important; }
 @keyframes sanctum-orbit { to { transform: rotate(360deg); } }
 @keyframes deepam-flicker { 0%,100% { opacity: .6; scale: .96; } 35% { opacity: 1; scale: 1.04; } 65% { opacity: .75; scale: 1; } }
 @keyframes incense-drift { from { transform: translate(-12px,25px) rotate(-12deg) scaleX(.7); opacity: .3; } to { transform: translate(22px,-25px) rotate(12deg) scaleX(1.2); opacity: .65; } }
 @keyframes sacred-mote { 0% { transform: translate(0,0); opacity: 0; } 20% { opacity: .5; } 75% { opacity: .3; } 100% { transform: translate(var(--drift),-95dvh); opacity: 0; } }
-@media (max-width: 900px) { .devotional-wing { width: 23%; } .devotional-wing--left { left: 0; } .devotional-wing--right { right: 0; } .wing-inscription small { font-size: 9.5px; letter-spacing: .1em; } .wing-inscription > span { max-width: 120px; margin: 0 auto; font-size: 16px; line-height: 1.25; } }
+@media (max-width: 900px) { .devotional-wing { width: 23%; } .devotional-wing--left { left: 0; } .devotional-wing--right { right: 0; } .wing-inscription small { font-size: 12px; letter-spacing: .1em; } .wing-inscription > span { max-width: 120px; margin: 0 auto; font-size: 16px; line-height: 1.25; } }
 @media (max-width: 700px) {
   .devotional-wing { width: 24%; top: 47%; bottom: 19%; } .devotional-wing--left { left: -4%; } .devotional-wing--right { right: -4%; }
   .deepam { inset: 0; opacity: .7; } .wing-inscription,.wing-arch { display: none; } .incense { height: 130%; width: 60%; }
   .sanctum-aura { width: 120vw; height: 120vw; margin: -60vw; top: 39%; }
-  .atmosphere-toggle { left: 50%; transform: translateX(-50%); bottom: 48px; font-size: 7px; }
+  .atmosphere-toggle { left: 50%; transform: translateX(-50%); bottom: 48px; font-size: 11px; }
 }
 @media (prefers-reduced-motion: reduce) { .temple-atmosphere * { animation: none !important; } .devotional-wing { transition: none; } .atmosphere-toggle { display: none; } }
 /* Confine the portrait fade to the shrine so the side inscriptions stay luminous. */
@@ -3003,4 +3003,4 @@ html.darshan-active, .darshan-active body { overflow: hidden; }
 @media (max-width: 700px) { .sanctum-vignette { width: min(100%, 48dvh); } }
 
 /* Architectural project library */
-.space-filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:30px 0 24px}.space-filters button{border:1px solid var(--line);padding:10px 16px;font-size:12px;color:var(--muted)}.space-filters button[aria-pressed=true]{background:var(--gold);color:#17140e;border-color:var(--gold)}.space-filters>span{margin-left:auto;font-size:11px;letter-spacing:.08em;color:var(--muted)}.space-image{position:relative;aspect-ratio:1.5;margin:18px -22px 20px;overflow:hidden}.space-image img{object-fit:cover;transition:transform .7s}.space-card:hover .space-image img{transform:scale(1.045)}.space-image>span{position:absolute;bottom:10px;left:12px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;background:#181710bc;color:#f4eedf;padding:5px 8px}.space-card--own{background:linear-gradient(145deg,#30291a,#171510);border-color:var(--gold)}
+.space-filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:30px 0 24px}.space-filters button{border:1px solid var(--line);padding:10px 16px;font-size:13.5px;color:var(--muted)}.space-filters button[aria-pressed=true]{background:var(--gold);color:#17140e;border-color:var(--gold)}.space-filters>span{margin-left:auto;font-size:13px;letter-spacing:.08em;color:var(--muted)}.space-image{position:relative;aspect-ratio:1.5;margin:18px -22px 20px;overflow:hidden}.space-image img{object-fit:cover;transition:transform .7s}.space-card:hover .space-image img{transform:scale(1.045)}.space-image>span{position:absolute;bottom:10px;left:12px;font-size:12px;letter-spacing:.15em;text-transform:uppercase;background:#181710bc;color:#f4eedf;padding:5px 8px}.space-card--own{background:linear-gradient(145deg,#30291a,#171510);border-color:var(--gold)}

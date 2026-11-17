@@ -42,7 +42,7 @@
   height: 22px;
   border: 1px solid var(--gold);
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 13px;
   color: var(--gold);
 }
 
@@ -260,7 +260,7 @@
 
 .opt-label {
   display: block;
-  font-size: 10.5px;
+  font-size: 12.5px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold);
@@ -277,7 +277,7 @@
 .palette button {
   padding: 7px 11px;
   border: 1px solid var(--line);
-  font-size: 12.5px;
+  font-size: 14px;
   color: var(--text);
   transition: border-color 0.3s, background 0.3s;
 }
@@ -334,7 +334,7 @@
 
 .palette > span {
   display: block;
-  font-size: 10px;
+  font-size: 12.5px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
@@ -390,7 +390,7 @@
 }
 
 .start-list small {
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--muted);
 }
 
@@ -401,7 +401,7 @@
 .colour-head {
   display: flex;
   justify-content: space-between;
-  font-size: 10.5px;
+  font-size: 12.5px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -412,7 +412,7 @@
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: none;
-  font-size: 12.5px;
+  font-size: 14px;
   color: var(--text);
 }
 
@@ -495,7 +495,7 @@
 }
 
 .style-pick small {
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--muted);
 }
 
@@ -531,7 +531,7 @@
   width: 24px;
   height: 24px;
   border: 1px solid var(--line);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .stage-list .is-done {
@@ -639,12 +639,12 @@
     justify-content: center;
     gap: 6px;
     padding: 9px 4px;
-    font-size: 12.5px;
+    font-size: 14px;
   }
   .step span {
     width: 18px;
     height: 18px;
-    font-size: 10px;
+    font-size: 12.5px;
   }
 }
 
@@ -682,8 +682,8 @@
   }
   .timeline-label {
     min-width: 0;
-    font-size: 12px;
+    font-size: 13.5px;
   }
 }
 
-.atelier-toolbar{position:absolute;top:16px;left:16px;right:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;pointer-events:none}.atelier-toolbar>div{display:flex;align-items:center;gap:4px;background:#171c1ee8;border:1px solid #ffffff25;padding:6px;pointer-events:auto;backdrop-filter:blur(16px)}.atelier-toolbar span{font-size:8px;letter-spacing:.15em;color:#b7b9ae;margin:0 6px}.atelier-toolbar button{font-size:11px;text-transform:capitalize;padding:7px 10px;color:#eee8db}.atelier-toolbar button[aria-pressed=true]{background:#d9c99e;color:#20251f}.atelier-toolbar input{width:26px;height:26px;border:0;background:none}.atelier-caption{position:absolute;left:24px;bottom:76px;display:grid;gap:6px;color:#f4f1e8;background:#1c2424c9;padding:16px 22px;border-left:2px solid #c8b37d;pointer-events:none}.atelier-caption span{font-size:8px;letter-spacing:.24em}.atelier-caption b{font:24px var(--serif)}.atelier-caption small{font-size:10px;color:#cdcfc8}.range select{display:block;width:100%;margin-top:8px;background:#171510;color:var(--text);padding:10px;border:1px solid var(--line)}.builder .panel-head .seg{max-width:210px;overflow-x:auto;flex-wrap:nowrap}.builder .panel-head .seg button{flex-shrink:0}@media(max-width:600px){.atelier-toolbar{top:8px;left:8px;right:8px;justify-content:flex-start}.atelier-toolbar span{display:none}.atelier-toolbar button{padding:6px;font-size:10px}.atelier-caption{left:12px;padding:10px 14px}.atelier-caption b{font-size:18px}}
+.atelier-toolbar{position:absolute;top:16px;left:16px;right:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;pointer-events:none}.atelier-toolbar>div{display:flex;align-items:center;gap:4px;background:#171c1ee8;border:1px solid #ffffff25;padding:6px;pointer-events:auto;backdrop-filter:blur(16px)}.atelier-toolbar span{font-size:11px;letter-spacing:.15em;color:#b7b9ae;margin:0 6px}.atelier-toolbar button{font-size:13px;text-transform:capitalize;padding:7px 10px;color:#eee8db}.atelier-toolbar button[aria-pressed=true]{background:#d9c99e;color:#20251f}.atelier-toolbar input{width:26px;height:26px;border:0;background:none}.atelier-caption{position:absolute;left:24px;bottom:76px;display:grid;gap:6px;color:#f4f1e8;background:#1c2424c9;padding:16px 22px;border-left:2px solid #c8b37d;pointer-events:none}.atelier-caption span{font-size:11px;letter-spacing:.24em}.atelier-caption b{font:24px var(--serif)}.atelier-caption small{font-size:12.5px;color:#cdcfc8}.range select{display:block;width:100%;margin-top:8px;background:#171510;color:var(--text);padding:10px;border:1px solid var(--line)}.builder .panel-head .seg{max-width:210px;overflow-x:auto;flex-wrap:nowrap}.builder .panel-head .seg button{flex-shrink:0}@media(max-width:600px){.atelier-toolbar{top:8px;left:8px;right:8px;justify-content:flex-start}.atelier-toolbar span{display:none}.atelier-toolbar button{padding:6px;font-size:12.5px}.atelier-caption{left:12px;padding:10px 14px}.atelier-caption b{font-size:18px}}

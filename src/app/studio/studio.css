@@ -55,7 +55,7 @@
 
 .studio-tab small {
   font-family: var(--sans);
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
@@ -119,7 +119,7 @@
 
 .panel-head .eyebrow {
   margin-bottom: 4px;
-  font-size: 10px;
+  font-size: 12.5px;
 }
 
 .panel-head .eyebrow::before {
@@ -161,14 +161,14 @@
 
 .board-link small {
   display: block;
-  font-size: 10px;
+  font-size: 12.5px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
 }
 
 .panel-sub {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--gold);
@@ -177,7 +177,7 @@
 
 .link-btn {
   flex: none;
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--gold-hi);
   border-bottom: 1px solid var(--line);
 }
@@ -194,7 +194,7 @@
 .seg button {
   padding: 7px 13px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--muted);
   white-space: nowrap;
   transition: background 0.3s, color 0.3s;
@@ -365,7 +365,7 @@
 }
 
 .tier-pick small {
-  font-size: 12px;
+  font-size: 13.5px;
   line-height: 1.4;
   color: var(--muted);
 }
@@ -461,7 +461,7 @@
   flex: none;
   padding: 3px 10px;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.06em;
   border: 1px solid var(--line);
   color: var(--muted);
@@ -547,7 +547,7 @@
   border: 1px solid var(--line);
   background: rgba(11, 8, 6, 0.75);
   backdrop-filter: blur(8px);
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--gold-hi);
   transition: background 0.3s;
 }
@@ -564,7 +564,7 @@
   padding: 6px 14px;
   border-radius: 999px;
   background: rgba(11, 8, 6, 0.6);
-  font-size: 11.5px;
+  font-size: 13px;
   color: var(--muted);
   white-space: nowrap;
   pointer-events: none;
@@ -598,7 +598,7 @@
 }
 
 .summary-plan span {
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--muted);
 }
 
@@ -616,7 +616,7 @@
 }
 
 .summary-price small {
-  font-size: 10px;
+  font-size: 12.5px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
@@ -694,7 +694,7 @@
   .stage-tools .seg button,
   .tool-btn {
     padding: 6px 10px;
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
@@ -705,7 +705,7 @@
 .colour-head {
   display: flex;
   justify-content: space-between;
-  font-size: 10.5px;
+  font-size: 12.5px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -716,7 +716,7 @@
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: none;
-  font-size: 12.5px;
+  font-size: 14px;
   color: var(--text);
 }
 
