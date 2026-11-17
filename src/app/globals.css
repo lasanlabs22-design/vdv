@@ -2854,8 +2854,9 @@ html.darshan-active, .darshan-active body { overflow: hidden; }
 .temple-leaf { position: absolute; top: 0; bottom: 0; width: 50%; background-image: linear-gradient(0deg,rgba(0,0,0,.7),transparent 40%,rgba(0,0,0,.25)),url('/devotional/temple-gates.webp'); background-size: 200% 100%; backface-visibility: hidden; transition: transform 2.6s cubic-bezier(.45,0,.16,1), filter 2.6s; }
 .temple-leaf--left { left: 0; background-position: left center; transform-origin: left center; }
 .temple-leaf--right { right: 0; background-position: right center; transform-origin: right center; }
-.temple-experience--opening .temple-leaf--left, .temple-experience--darshan .temple-leaf--left { transform: rotateY(-105deg); filter: brightness(.35); }
-.temple-experience--opening .temple-leaf--right, .temple-experience--darshan .temple-leaf--right { transform: rotateY(105deg); filter: brightness(.35); }
+/* The leaves swing inward, away from the visitor, into the shrine. */
+.temple-experience--opening .temple-leaf--left, .temple-experience--darshan .temple-leaf--left { transform: rotateY(105deg); filter: brightness(.35); }
+.temple-experience--opening .temple-leaf--right, .temple-experience--darshan .temple-leaf--right { transform: rotateY(-105deg); filter: brightness(.35); }
 .temple-heading { position: absolute; top: 30px; left: 40px; display: grid; text-shadow: 0 2px 15px #000; }
 .temple-heading > span { font: 22px var(--serif); }
 .temple-heading small { font-size: 12px; margin-top: 7px; letter-spacing: .2em; }
