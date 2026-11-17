@@ -15,10 +15,16 @@ const telugu = Noto_Serif_Telugu({ variable: "--font-telugu", subsets: ["telugu"
 // Only for the "Powered by Lasan Labs" signature in the footer.
 const grotesk = Space_Grotesk({ variable: "--font-space-grotesk", weight: "600", subsets: ["latin"] });
 
+// Link previews (WhatsApp, Facebook, X) need an absolute URL for the card image (app/opengraph-image.jpg).
+// On Vercel this is the project's production domain, which follows a custom domain once one is attached.
+const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(productionHost ? `https://${productionHost}` : "http://localhost:3000"),
   title: { default: `${site.name} | Architecture, Interiors & Turnkey Projects`, template: `%s | ${site.name}` },
   description: site.statement,
   openGraph: { title: site.name, description: site.statement, siteName: site.name, type: "website", locale: "en_IN" },
+  twitter: { card: "summary_large_image", title: site.name, description: site.statement },
 };
 
 export const viewport: Viewport = { themeColor: "#0b0806" };
