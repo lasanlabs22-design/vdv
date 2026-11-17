@@ -48,7 +48,7 @@ export default function Intro() {
             <div className="incense incense--one" /><div className="incense incense--two" />
             <div className="deepam-light" />
             <div className="deepam"><Image src="/devotional/brass-deepam.webp" alt="" fill sizes="(max-width: 700px) 24vw, 24vw" loading="eager" /></div>
-            <div className="wing-inscription"><span>{side === "left" ? "A moment of stillness" : "A lifetime of grace"}</span><i /><small>{side === "left" ? "DEVOTION IN EVERY DETAIL" : "DIVINITY IN EVERY SPACE"}</small></div>
+            <div className="wing-inscription"><span>{side === "left" ? "A Moment of stillness" : "A lifetime of grace"}</span><i /><small>{side === "left" ? "DEVOTION IN EVERY DETAIL" : "DIVINITY IN EVERY SPACE"}</small></div>
           </div>
         ))}
         <div className="temple-motes">{Array.from({ length: 24 }, (_, i) => <i key={i} style={{ "--x": `${(i * 37 + 3) % 100}%`, "--delay": `${-(i % 12)}s`, "--duration": `${12 + i % 7}s`, "--drift": `${i % 2 ? 35 : -35}px` } as CSSProperties} />)}</div>
