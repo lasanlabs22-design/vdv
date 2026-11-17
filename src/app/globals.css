@@ -2850,7 +2850,9 @@ html.darshan-active, .darshan-active body { overflow: hidden; }
 .sanctum img { object-fit: contain; }
 .temple-experience--opening .sanctum, .temple-experience--darshan .sanctum { transform: scale(1); }
 .sanctum-vignette { position: absolute; inset: 0; background: linear-gradient(0deg,#080705 0%,transparent 22%,transparent 90%,#080705); }
-.temple-doors { position: absolute; inset: 0; perspective: 1600px; pointer-events: none; }
+/* A fixed perspective made the opened leaves' edge strip grow with screen width (195px at 1920).
+   Scaling it past 1440px caps the strip at about 6.2vw, which the side wings clear below. */
+.temple-doors { position: absolute; inset: 0; perspective: max(1600px, 111vw); pointer-events: none; }
 .temple-leaf { position: absolute; top: 0; bottom: 0; width: 50%; background-image: linear-gradient(0deg,rgba(0,0,0,.7),transparent 40%,rgba(0,0,0,.25)),url('/devotional/temple-gates.webp'); background-size: 200% 100%; backface-visibility: hidden; transition: transform 2.6s cubic-bezier(.45,0,.16,1), filter 2.6s; }
 .temple-leaf--left { left: 0; background-position: left center; transform-origin: left center; }
 .temple-leaf--right { right: 0; background-position: right center; transform-origin: right center; }
@@ -2996,7 +2998,14 @@ html.darshan-active, .darshan-active body { overflow: hidden; }
   .devotional-wing { width: 24%; top: 47%; bottom: 19%; } .devotional-wing--left { left: -4%; } .devotional-wing--right { right: -4%; }
   .deepam { inset: 0; opacity: .7; } .wing-inscription,.wing-arch { display: none; } .incense { height: 130%; width: 60%; }
   .sanctum-aura { width: 120vw; height: 120vw; margin: -60vw; top: 39%; }
-  .atmosphere-toggle { left: 50%; transform: translateX(-50%); bottom: 48px; font-size: 11px; }
+  /* Once the doors are open, the pause control takes the progress line's place so it never collides with the caption. */
+  .temple-experience--darshan .temple-progress { display: none; }
+  .atmosphere-toggle { left: 50%; transform: translateX(-50%); bottom: 12px; padding: 8px 14px; font-size: 12.5px; color: #d9c08a; border-bottom-color: #d9c08a60; white-space: nowrap; }
+}
+/* Keep the wings and the pause control clear of the opened door strip (at most 6.2vw, see .temple-doors). */
+@media (min-width: 1201px) {
+  .devotional-wing { width: 22%; } .devotional-wing--left { left: calc(6.2vw + 24px); } .devotional-wing--right { right: calc(6.2vw + 24px); }
+  .atmosphere-toggle { left: calc(6.2vw + 24px); }
 }
 @media (prefers-reduced-motion: reduce) { .temple-atmosphere * { animation: none !important; } .devotional-wing { transition: none; } .atmosphere-toggle { display: none; } }
 /* Confine the portrait fade to the shrine so the side inscriptions stay luminous. */
