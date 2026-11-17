@@ -1,0 +1,6 @@
+Ferrari 458 Italia model by vicent091036.
+Original model: https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6
+Distributed by the three.js project: https://github.com/mrdoob/three.js/blob/dev/examples/models/gltf/ferrari.glb
+Source attribution: https://threejs.org/examples/webgl_materials_car.html
+Changes: architectural scene placement, scale normalization, custom body paint; no wheel animation.
+Draco decoder files: Google Draco, Apache License 2.0, distributed with three.js.
