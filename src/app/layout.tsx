@@ -7,6 +7,7 @@ import { site } from "@/lib/site";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Motion from "@/components/Motion";
+import FloatingContact from "@/components/FloatingContact";
 
 const playfair = Playfair_Display({ variable: "--font-playfair", subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], style: ["normal", "italic"] });
 const montserrat = Montserrat({ variable: "--font-montserrat", subsets: ["latin"], weight: ["300", "400", "500", "600"] });
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Nav />
         <main>{children}</main>
         <Footer />
+        <FloatingContact />
         <Motion />
       </body>
     </html>
