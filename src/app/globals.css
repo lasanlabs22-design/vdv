@@ -2846,6 +2846,9 @@ figure {
 html.darshan-active, .darshan-active body { overflow: hidden; }
 .temple-experience { position: fixed; inset: 0; width: 100%; max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 0; border: 0; background: #080705; color: #f6e9cf; overflow: hidden; }
 .temple-experience::backdrop { background: #080705; }
+/* Until React opens the dialog, show it from the first paint so the home page never flashes before the doors. */
+html.js:not(.intro-mounted):not(.intro-seen) { overflow: hidden; }
+html.js:not(.intro-mounted):not(.intro-seen) .temple-experience { display: block; z-index: 1000; }
 .sanctum { position: absolute; inset: 3% 0 12%; transform: scale(.94); transition: transform 4s ease; }
 .sanctum img { object-fit: contain; }
 .temple-experience--opening .sanctum, .temple-experience--darshan .sanctum { transform: scale(1); }
