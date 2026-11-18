@@ -2853,7 +2853,7 @@ html.darshan-active, .darshan-active body { overflow: hidden; }
 /* A fixed perspective made the opened leaves' edge strip grow with screen width (195px at 1920).
    Scaling it past 1440px caps the strip at about 6.2vw, which the side wings clear below. */
 .temple-doors { position: absolute; inset: 0; perspective: max(1600px, 111vw); pointer-events: none; }
-.temple-leaf { position: absolute; top: 0; bottom: 0; width: 50%; background-image: linear-gradient(0deg,rgba(0,0,0,.7),transparent 40%,rgba(0,0,0,.25)),url('/devotional/temple-gates.webp'); background-size: 200% 100%; backface-visibility: hidden; transition: transform 2.6s cubic-bezier(.45,0,.16,1), filter 2.6s; }
+.temple-leaf { position: absolute; top: 0; bottom: 0; width: 50%; background-image: linear-gradient(0deg,rgba(0,0,0,.7),transparent 40%,rgba(0,0,0,.25)),url('/devotional/temple-gates-door.webp'); background-image: linear-gradient(0deg,rgba(0,0,0,.7),transparent 40%,rgba(0,0,0,.25)),image-set(url('/devotional/temple-gates-door.avif') type('image/avif'),url('/devotional/temple-gates-door.webp') type('image/webp')); background-size: 200% 100%; backface-visibility: hidden; transition: transform 2.6s cubic-bezier(.45,0,.16,1), filter 2.6s; }
 .temple-leaf--left { left: 0; background-position: left center; transform-origin: left center; }
 .temple-leaf--right { right: 0; background-position: right center; transform-origin: right center; }
 /* The leaves swing inward, away from the visitor, into the shrine. */

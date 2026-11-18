@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
         <figure className="divine-shrine">
           <div className="shrine-orbit" aria-hidden="true" />
-          <div className="shrine-portrait"><Image src="/devotional/lord-balaji.webp" alt="Lord Balaji, the inspiration behind Venkateshwara DV Spaces" fill sizes="(max-width: 700px) 90vw, 45vw" loading="eager" /></div>
+          <div className="shrine-portrait"><Image src="/devotional/lord-balaji.webp" alt="Lord Balaji, the inspiration behind Venkateshwara DV Spaces" fill sizes="(max-width: 700px) 100vw, 60vw" loading="eager" /></div>
           <figcaption><span lang="te">ఓం నమో వేంకటేశాయ</span><small>In His grace, we create.</small></figcaption>
           <DarshanButton />
         </figure>

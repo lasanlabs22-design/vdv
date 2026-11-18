@@ -25,7 +25,7 @@ export default function Showcase() {
     <section className="showcase" aria-label="Selected architecture" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
       <div className="showcase-media">
         {slides.map((sl, k) => (
-          <Image key={sl.src} src={sl.src} alt={sl.title} fill sizes="100vw" quality={88} className={k === i ? "is-on" : ""} />
+          <Image key={sl.src} src={sl.src} alt={sl.title} fill sizes="100vw"className={k === i ? "is-on" : ""} />
         ))}
       </div>
       <div className="showcase-copy">
