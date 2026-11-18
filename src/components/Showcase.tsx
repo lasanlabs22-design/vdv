@@ -1,32 +1,58 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import exterior from "../../public/showcase/showcase-1-exterior.jpg";
+import entrance from "../../public/showcase/showcase-3-entrance.jpg";
+import living from "../../public/showcase/showcase-2-living.jpg";
 
 const slides = [
-  { src: "/showcase/showcase-1-exterior.jpg", title: "Residence at dusk", kind: "Residential architecture" },
-  { src: "/showcase/showcase-3-entrance.jpg", title: "Tree of life entrance", kind: "Residence, night entrance" },
-  { src: "/showcase/showcase-2-living.jpg", title: "Living hall with Srivari niche", kind: "Interior design" },
+  { src: exterior, title: "Residence at dusk", kind: "Residential architecture" },
+  { src: entrance, title: "Tree of life entrance", kind: "Residence, night entrance" },
+  { src: living, title: "Living hall with Srivari niche", kind: "Interior design" },
 ];
 
-/** Full-width showcase of selected work, cross-fading slowly. Pauses on hover and for reduced motion. */
+/**
+ * Full-width showcase of selected work, cross-fading slowly while on screen. Pauses on hover and for reduced motion.
+ * Only slides already shown, plus the next one while the section is in view, are mounted, so the first load fetches one image.
+ */
 export default function Showcase() {
+  const root = useRef<HTMLElement>(null);
   const [i, setI] = useState(0);
+  const [seen, setSeen] = useState(0);
+  const [inView, setInView] = useState(false);
   const [paused, setPaused] = useState(false);
 
   useEffect(() => {
-    if (paused || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const t = setTimeout(() => setI((n) => (n + 1) % slides.length), 6500);
+    const io = new IntersectionObserver(([e]) => setInView(e.isIntersecting));
+    if (root.current) io.observe(root.current);
+    return () => io.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!inView || paused || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const t = setTimeout(() => {
+      const next = (i + 1) % slides.length;
+      setI(next);
+      setSeen((s) => Math.max(s, next));
+    }, 6500);
     return () => clearTimeout(t);
-  }, [i, paused]);
+  }, [i, paused, inView]);
+
+  const pick = (k: number) => {
+    setI(k);
+    setSeen((s) => Math.max(s, k));
+  };
 
   const s = slides[i];
   return (
-    <section className="showcase" aria-label="Selected architecture" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+    <section ref={root} className="showcase" aria-label="Selected architecture" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
       <div className="showcase-media">
-        {slides.map((sl, k) => (
-          <Image key={sl.src} src={sl.src} alt={sl.title} fill sizes="100vw"className={k === i ? "is-on" : ""} />
-        ))}
+        {slides.map((sl, k) =>
+          k <= seen || (inView && k === seen + 1) ? (
+            <Image key={sl.src.src} src={sl.src} alt={sl.title} fill sizes="100vw" placeholder="blur" className={k === i ? "is-on" : ""} />
+          ) : null,
+        )}
       </div>
       <div className="showcase-copy">
         <p className="eyebrow">The art of belonging</p>
@@ -44,7 +70,7 @@ export default function Showcase() {
         </p>
         <div className="showcase-dots" role="group" aria-label="Choose an image">
           {slides.map((sl, k) => (
-            <button key={sl.src} className={k === i ? "is-on" : ""} aria-label={sl.title} aria-pressed={k === i} onClick={() => setI(k)} />
+            <button key={sl.src.src} className={k === i ? "is-on" : ""} aria-label={sl.title} aria-pressed={k === i} onClick={() => pick(k)} />
           ))}
         </div>
       </div>
