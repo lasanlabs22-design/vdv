@@ -112,12 +112,13 @@ for (const vp of viewports) {
     if (p.full) {
       // One viewport screenshot per section. Full-page captures of a 12k px page break the software renderer.
       await wait(1500);
-      await page.screenshot({ path: `${shots}${vp.name}-home-00-hero.png` });
+      // After the intro's door animation the software renderer stays busy, so home screenshots get extra time.
+      await page.screenshot({ path: `${shots}${vp.name}-home-00-hero.png`, timeout: 90000 });
       const sections = [".divine-foundation", "#about", "#services", "#projects", "#spaces", ".mood-section", "#work", "#process", ".vision", "#contact", ".footer"];
       for (const [i, sel] of sections.entries()) {
         await page.evaluate((s) => document.querySelector(s)?.scrollIntoView({ block: "start" }), sel);
         await wait(1600);
-        await page.screenshot({ path: `${shots}${vp.name}-home-${String(i + 1).padStart(2, "0")}-${sel.replace(/[#.]/g, "")}.png` });
+        await page.screenshot({ path: `${shots}${vp.name}-home-${String(i + 1).padStart(2, "0")}-${sel.replace(/[#.]/g, "")}.png`, timeout: 90000 });
       }
     } else {
       await wait(5000);

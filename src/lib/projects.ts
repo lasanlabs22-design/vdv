@@ -80,7 +80,8 @@ export const projects: Project[] = [
   },
 ];
 
-export const boardSrc = (p: Project) => `/boards/${p.slug}.jpg`;
+/** 1280px WebP copy of the board, used as the 3D gallery texture. */
+export const boardSrc = (p: Project) => `/boards/tex/${p.slug}.webp`;
 export const heroSrc = (p: Project) => `/boards/${p.slug}-hero.jpg`;
 /** The board enlarged 2× with a Lanczos filter and light sharpening, for zooming. Panel rects stay in board pixels. */
 export const hdSrc = (p: Project) => `/boards/${p.slug}-hd.jpg`;
