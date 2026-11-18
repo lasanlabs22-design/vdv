@@ -15,7 +15,8 @@ export default function Intro() {
     const open = () => {
       setPhase("closed");
       el.showModal();
-      document.documentElement.classList.add("darshan-active");
+      // The modal now covers the page, so the first-paint CSS stand-in can stand down.
+      document.documentElement.classList.add("darshan-active", "intro-mounted");
     };
     if (!document.documentElement.classList.contains("intro-seen")) open();
     window.addEventListener("dv-replay", open);
