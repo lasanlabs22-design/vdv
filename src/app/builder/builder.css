@@ -363,6 +363,10 @@
 .panel-next {
   width: 100%;
   margin-top: 18px;
+  /* Long labels ("Send my project on WhatsApp") wrap instead of stretching the panel past a phone screen. */
+  white-space: normal;
+  justify-content: center;
+  text-align: center;
 }
 
 .start-list {
