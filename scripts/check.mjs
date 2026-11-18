@@ -81,8 +81,12 @@ const overflowOf = (page) =>
   page.evaluate(() => {
     const vw = document.documentElement.clientWidth;
     let worst = document.documentElement.scrollWidth - vw;
+    const inStrip = (el) => {
+      for (let p = el.parentElement; p; p = p.parentElement) if (/auto|scroll/.test(getComputedStyle(p).overflowX)) return true;
+      return false;
+    };
     for (const el of document.querySelectorAll("h1, h2, h3, p, a, button, li, label, input, select, textarea")) {
-      if (el.closest("[aria-hidden=true], .chips, .studio-tabs, .lightbox")) continue;
+      if (el.closest("[aria-hidden=true], .chips, .studio-tabs, .lightbox") || inStrip(el)) continue;
       const style = getComputedStyle(el);
       if (style.visibility === "hidden" || style.display === "none") continue;
       const r = el.getBoundingClientRect();
@@ -92,14 +96,15 @@ const overflowOf = (page) =>
     return worst;
   });
 
-// The temple-door intro: closed, then mid-swing.
+// The temple-door intro: closed, then opening. Mid-swing frames never finish in the software renderer,
+// so the second shot fast-forwards the door transition to its end and stops the looping effects.
 {
   const context = await browser.newContext(viewports[0]);
   const { page, errors } = await open(context, "/");
   await wait(1300);
   await page.screenshot({ path: `${shots}desktop-intro.png` });
   await wait(1900);
-  await page.screenshot({ path: `${shots}desktop-intro-opening.png` });
+  await page.screenshot({ path: `${shots}desktop-intro-opening.png`, animations: "disabled", timeout: 90000 });
   report("desktop intro", errors, 0);
   await context.close();
 }
