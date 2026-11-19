@@ -3022,3 +3022,18 @@ html.js:not(.intro-mounted):not(.intro-seen) .temple-experience { display: block
 
 /* Architectural project library */
 .space-filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:30px 0 24px}.space-filters button{border:1px solid var(--line);padding:10px 16px;font-size:13.5px;color:var(--muted)}.space-filters button[aria-pressed=true]{background:var(--gold);color:#17140e;border-color:var(--gold)}.space-filters>span{margin-left:auto;font-size:13px;letter-spacing:.08em;color:var(--muted)}.space-image{position:relative;aspect-ratio:1.5;margin:18px -22px 20px;overflow:hidden}.space-image img{object-fit:cover;transition:transform .7s}.space-card:hover .space-image img{transform:scale(1.045)}.space-image>span{position:absolute;bottom:10px;left:12px;font-size:12px;letter-spacing:.15em;text-transform:uppercase;background:#181710bc;color:#f4eedf;padding:5px 8px}.space-card--own{background:linear-gradient(145deg,#30291a,#171510);border-color:var(--gold)}
+
+/* Build films: two one-screen sections, copy beside a vertical film sized from the screen height. The second mirrors the first. */
+.build { background: var(--grain), var(--ink-2); color: var(--text); }
+.build--flip { background: var(--grain), var(--ink); }
+.build-screen { display: grid; grid-template-columns: minmax(280px, 460px) auto; justify-content: center; align-items: center; gap: clamp(40px, 7vw, 120px); height: 100svh; min-height: 620px; max-width: 1440px; margin: 0 auto; padding: 104px var(--gutter) 32px; }
+.build--flip .build-copy { order: 2; }
+.build-copy .title { font-size: clamp(28px, min(3.2vw, 5.4svh), 48px); }
+.build-lead { font-size: 15px; line-height: 1.8; color: var(--muted); max-width: 400px; }
+.reel { display: block; height: min(calc(100svh - 160px), 720px); aspect-ratio: 9 / 16; object-fit: cover; background: #000; border: 1px solid var(--line); border-radius: 3px; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+@media (max-width: 700px) {
+  .build-screen { grid-template-columns: minmax(0, 1fr); justify-items: center; height: auto; min-height: 100svh; gap: 22px; padding: 88px var(--gutter) 28px; }
+  .build--flip .build-copy { order: 0; }
+  .build-lead { font-size: 14px; }
+  .reel { height: min(56svh, 112vw); }
+}
