@@ -9,6 +9,7 @@ import MoodSlider from "@/components/MoodSlider";
 import Gallery from "@/components/Gallery";
 import Projects from "@/components/Projects";
 import SevenHills from "@/components/SevenHills";
+import BuildReel from "@/components/BuildReel";
 import ContactForm from "@/components/ContactForm";
 import { site } from "@/lib/site";
 
@@ -100,6 +101,28 @@ export default function Home() {
             </>
           }
         />
+      </section>
+
+      <section id="build" className="build">
+        <div className="build-screen">
+          <div className="build-copy">
+            <p className="eyebrow">From plot to home</p>
+            <h2 className="title">Every home begins <em>with bare earth.</em></h2>
+            <p className="build-lead">Before the marble and the lamps there is only a plot. Watch an empty site become a finished family home, floor by floor.</p>
+          </div>
+          <BuildReel src="/videos/build-plot.mp4" label="Aerial film of an empty plot becoming a finished home" />
+        </div>
+      </section>
+
+      <section className="build build--flip">
+        <div className="build-screen">
+          <div className="build-copy">
+            <p className="eyebrow">Drawing to doorstep</p>
+            <h2 className="title">From the first line <em>to the front door.</em></h2>
+            <p className="build-lead">Every home starts as a plan. The structure follows the drawing, and the rooms inside are finished exactly as they were designed.</p>
+          </div>
+          <BuildReel src="/videos/build-walkthrough.mp4" label="Film of a home rising from its plans, then a walk through the front door into the finished interior" />
+        </div>
       </section>
 
       <section id="process" className="process">
