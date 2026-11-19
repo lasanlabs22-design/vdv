@@ -27,12 +27,12 @@ export default function Home() {
           </figure>
           <div>
             <p className="eyebrow reveal">DV means Divine Vision</p>
-            <h2 className="title reveal" data-delay="80">Thirty years of architecture, <em>offered to every home.</em></h2>
+            <h2 className="title reveal" data-delay="80">Rooted in devotion, <em>built with modern engineering.</em></h2>
             <p className="lead reveal" data-delay="160">
               {site.founder} is an award-winning architect. He studied at the University of Virginia, holds a PhD in Architecture and has delivered more than 400 government and private projects across the globe.
             </p>
             <p className="body reveal" data-delay="220">
-              DV Spaces is how he shares that experience. A modest budget or a generous one receives the same care, and no design is ever copied from another project. Every space is drawn new, for the family or business that will use it, and every project begins with the Lord.
+              DV Spaces pairs that experience with today&apos;s tools: modern engineering, current materials and 3D walkthroughs that let you see your space before a single brick is laid. A modest budget or a generous one receives the same care, no design is ever copied, and every project begins with the Lord.
             </p>
             <p className="signature reveal" data-delay="280">
               {site.founder}
