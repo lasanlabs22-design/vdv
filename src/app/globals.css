@@ -2897,7 +2897,7 @@ html.js:not(.intro-mounted):not(.intro-seen) .temple-experience { display: block
 .divine-signature p { font-size: 12.5px; color: #8e8677; line-height: 1.8; letter-spacing: .04em; }
 .divine-signature strong { color: #c1b59d; font-weight: 400; }
 .sacred-mark { position: relative; font: 54px/1 var(--serif); color: #dcc9a4; }
-.sacred-mark i { position: absolute; width: 3px; height: 23px; background: #a13a2e; top: 9px; left: 50%; }
+.sacred-mark i { position: absolute; width: 3px; height: 23px; background: #a13a2e; top: 9px; left: calc(50% + .4px); transform: translateX(-50%); }
 .divine-shrine { position: relative; padding: 15px 24px 0; text-align: center; max-width: 500px; width: min(100%, calc((100svh - var(--chrome)) / 1.4 + 48px)); justify-self: center; }
 .shrine-portrait { position: relative; aspect-ratio: 2/2.8; border-radius: 48% 48% 3px 3px; overflow: hidden; box-shadow: 0 0 65px #be8b2520; }
 .shrine-portrait img { object-fit: cover; object-position: center; }
