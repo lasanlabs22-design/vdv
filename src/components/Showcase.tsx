@@ -13,43 +13,31 @@ const slides = [
 ];
 
 /**
- * Full-width showcase of selected work, cross-fading slowly while on screen. Pauses on hover and for reduced motion.
- * Only slides already shown, plus the next one while the section is in view, are mounted, so the first load fetches one image.
+ * Full-width showcase of selected work. The active dash fills as a timer and the next slide fades in over the current one
+ * when it completes; the timer pauses off screen and for reduced motion.
+ * Only the first slide is mounted until the section is first in view, so the first load fetches one image.
  */
 export default function Showcase() {
   const root = useRef<HTMLElement>(null);
   const [i, setI] = useState(0);
-  const [seen, setSeen] = useState(0);
+  const [loaded, setLoaded] = useState(false);
   const [inView, setInView] = useState(false);
-  const [paused, setPaused] = useState(false);
 
   useEffect(() => {
-    const io = new IntersectionObserver(([e]) => setInView(e.isIntersecting));
+    const io = new IntersectionObserver(([e]) => {
+      setInView(e.isIntersecting);
+      if (e.isIntersecting) setLoaded(true);
+    });
     if (root.current) io.observe(root.current);
     return () => io.disconnect();
   }, []);
 
-  useEffect(() => {
-    if (!inView || paused || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const t = setTimeout(() => {
-      const next = (i + 1) % slides.length;
-      setI(next);
-      setSeen((s) => Math.max(s, next));
-    }, 6500);
-    return () => clearTimeout(t);
-  }, [i, paused, inView]);
-
-  const pick = (k: number) => {
-    setI(k);
-    setSeen((s) => Math.max(s, k));
-  };
-
   const s = slides[i];
   return (
-    <section ref={root} className="showcase" aria-label="Selected architecture" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+    <section ref={root} className={`showcase${inView ? "" : " is-paused"}`} aria-label="Selected architecture">
       <div className="showcase-media">
         {slides.map((sl, k) =>
-          k <= seen || (inView && k === seen + 1) ? (
+          k === 0 || loaded ? (
             <Image key={sl.src.src} src={sl.src} alt={sl.title} fill sizes="100vw" placeholder="blur" className={k === i ? "is-on" : ""} />
           ) : null,
         )}
@@ -70,7 +58,9 @@ export default function Showcase() {
         </p>
         <div className="showcase-dots" role="group" aria-label="Choose an image">
           {slides.map((sl, k) => (
-            <button key={sl.src.src} className={k === i ? "is-on" : ""} aria-label={sl.title} aria-pressed={k === i} onClick={() => pick(k)} />
+            <button key={sl.src.src} className={k === i ? "is-on" : ""} aria-label={sl.title} aria-pressed={k === i} onClick={() => setI(k)}>
+              {k === i && <i key={i} onAnimationEnd={() => setI((i + 1) % slides.length)} />}
+            </button>
           ))}
         </div>
       </div>

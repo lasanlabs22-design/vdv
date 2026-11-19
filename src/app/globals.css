@@ -2920,10 +2920,11 @@ html.js:not(.intro-mounted):not(.intro-seen) .temple-experience { display: block
 /* Full-width showcase: the render at its own 16:9 shape, copy laid over a soft dark fade. */
 /* Always the full width; the height follows 16:9 but never runs past the screen. */
 .showcase { position: relative; width: 100%; height: min(56.25vw, calc(100svh - 72px)); min-height: 520px; overflow: hidden; background: #0b0805; color: var(--ivory); }
-.showcase-media { position: absolute; inset: 0; }
-.showcase-media img { object-fit: cover; object-position: center 30%; opacity: 0; transition: opacity 1.6s ease; }
-.showcase-media img.is-on { opacity: 1; }
-.showcase-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,5,2,.88) 0%, rgba(8,5,2,.62) 32%, rgba(8,5,2,0) 62%), linear-gradient(0deg, rgba(8,5,2,.7) 0%, transparent 28%); pointer-events: none; }
+.showcase-media { position: absolute; inset: 0; isolation: isolate; }
+/* The incoming slide fades in on top; the outgoing one stays solid underneath and hides once the fade is done. */
+.showcase-media img { object-fit: cover; object-position: center 30%; opacity: 0; transition: opacity 0s 1.6s; }
+.showcase-media img.is-on { opacity: 1; z-index: 1; transition: opacity 1.6s ease-in-out; }
+.showcase-media::after { content: ""; position: absolute; inset: 0; z-index: 2;background: linear-gradient(90deg, rgba(8,5,2,.88) 0%, rgba(8,5,2,.62) 32%, rgba(8,5,2,0) 62%), linear-gradient(0deg, rgba(8,5,2,.7) 0%, transparent 28%); pointer-events: none; }
 .showcase-copy { position: absolute; left: 7%; top: 50%; translate: 0 -50%; max-width: 640px; }
 .showcase-copy .btn { gap: 14px; }
 .showcase-copy .eyebrow { color: var(--gold); }
@@ -2935,7 +2936,11 @@ html.js:not(.intro-mounted):not(.intro-seen) .temple-experience { display: block
 .showcase-meta small { display: block; font: 600 10px var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--gold-hi); margin-bottom: 4px; }
 .showcase-dots { display: flex; gap: 10px; }
 .showcase-dots button { width: 34px; height: 3px; background: rgba(255,240,215,.35); transition: background .4s, width .4s; }
-.showcase-dots button.is-on { width: 56px; background: var(--gold-hi); }
+.showcase-dots button.is-on { width: 56px; position: relative; overflow: hidden; }
+.showcase-dots i { position: absolute; inset: 0; background: var(--gold-hi); transform-origin: left; animation: showcase-timer 6.5s linear forwards; }
+.showcase.is-paused .showcase-dots i { animation-play-state: paused; }
+@keyframes showcase-timer { from { transform: scaleX(0); } }
+@media (prefers-reduced-motion: reduce) { .showcase-dots i { animation: none; } }
 @media (max-width: 760px) {
   .showcase { height: auto; min-height: 0; display: grid; }
   .showcase-media { position: relative; aspect-ratio: 16 / 9; }
