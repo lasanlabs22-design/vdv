@@ -3032,8 +3032,9 @@ html.js:not(.intro-mounted):not(.intro-seen) .temple-experience { display: block
 .build-lead { font-size: 15px; line-height: 1.8; color: var(--muted); max-width: 400px; }
 .reel { display: block; height: min(calc(100svh - 160px), 720px); aspect-ratio: 9 / 16; object-fit: cover; background: #000; border: 1px solid var(--line); border-radius: 3px; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
 @media (max-width: 700px) {
-  .build-screen { grid-template-columns: minmax(0, 1fr); justify-items: center; height: auto; min-height: 100svh; gap: 22px; padding: 88px var(--gutter) 28px; }
-  .build--flip .build-copy { order: 0; }
-  .build-lead { font-size: 14px; }
-  .reel { height: min(56svh, 112vw); }
+  /* On phones the film fills the screen under the nav (72px at most), with the copy on a dark band over its foot. */
+  .build-screen { display: block; position: relative; height: 100svh; min-height: 600px; max-width: none; padding: 0; }
+  .reel { position: absolute; top: 72px; left: 0; width: 100%; height: calc(100% - 72px); border: 0; border-radius: 0; box-shadow: none; }
+  .build-copy { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; padding: 110px 84px 26px var(--gutter); /* right side clears the floating WhatsApp and call buttons */ background: linear-gradient(to bottom, transparent, rgba(10, 9, 6, .8) 40%, rgba(10, 9, 6, .94)); }
+  .build-lead { font-size: 14px; line-height: 1.65; margin-bottom: 0; color: #e6dcc7; }
 }
