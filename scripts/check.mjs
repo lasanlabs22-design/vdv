@@ -54,6 +54,8 @@ const pages = [
   { path: "/studio?type=office", name: "studio-office" },
   { path: "/studio?type=retail", name: "studio-retail" },
   { path: "/studio?type=pooja", name: "studio-pooja" },
+  { path: "/privacy-policy", name: "privacy-policy" },
+  { path: "/terms-and-conditions", name: "terms-and-conditions" },
 ];
 
 let failures = 0;

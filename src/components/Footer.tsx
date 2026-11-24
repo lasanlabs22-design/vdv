@@ -39,7 +39,13 @@ export default function Footer() {
           <span>Powered by</span>
           <span className="lasan-signature">Lasan Labs</span>
         </p>
-        <p className="footer-copy">© {new Date().getFullYear()} {site.name}.</p>
+        <div className="footer-copy">
+          <p>© {new Date().getFullYear()} {site.name}.</p>
+          <p className="footer-legal">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-and-conditions">Terms and Conditions</Link>
+          </p>
+        </div>
       </div>
     </footer>
   );
