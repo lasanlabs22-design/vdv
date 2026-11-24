@@ -2744,6 +2744,68 @@ figure {
   text-align: right;
 }
 
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px 18px;
+  margin-top: 4px;
+}
+.footer-legal a:hover {
+  color: var(--gold-hi);
+}
+
+/* Privacy Policy and Terms and Conditions pages. */
+.legal {
+  padding-top: clamp(130px, 14vw, 170px);
+}
+.legal-wrap {
+  max-width: 860px;
+}
+.legal-head {
+  text-align: center;
+  margin-bottom: clamp(36px, 5vw, 56px);
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.legal-company {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(20px, 2.2vw, 26px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold-hi);
+  margin-bottom: 10px;
+}
+.legal-head .eyebrow {
+  justify-content: center;
+  letter-spacing: 0.18em;
+}
+.legal-meta {
+  font-size: 14px;
+  color: var(--muted);
+}
+.legal-section {
+  margin-bottom: 28px;
+}
+.legal-section h2 {
+  font-family: var(--serif);
+  font-size: clamp(19px, 1.7vw, 22px);
+  color: var(--gold-hi);
+  margin-bottom: 8px;
+}
+.legal-section p {
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.legal-closing {
+  margin-top: 40px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--muted);
+}
+
 .footer-mantra {
   font-family: var(--telugu);
   font-size: 16px;
@@ -2839,6 +2901,9 @@ figure {
   .footer-copy {
     justify-self: center;
     text-align: center;
+  }
+  .footer-legal {
+    justify-content: center;
   }
 }
 
